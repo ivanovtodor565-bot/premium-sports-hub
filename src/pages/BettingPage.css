@@ -1,0 +1,281 @@
+.betting-page {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.betting-page h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #ffd700;
+}
+
+.betting-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.events-section {
+  background: rgba(45, 53, 97, 0.5);
+  border: 1px solid #3d4470;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.events-section h3 {
+  color: #ffd700;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.events-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.event-item {
+  background: rgba(61, 68, 112, 0.5);
+  border: 2px solid #3d4470;
+  border-radius: 6px;
+  padding: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.event-item:hover {
+  background: rgba(61, 68, 112, 0.8);
+  border-color: #ffd700;
+}
+
+.event-item.selected {
+  background: rgba(255, 215, 0, 0.15);
+  border-color: #ffd700;
+}
+
+.event-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.sport-icon {
+  font-size: 24px;
+}
+
+.match-name {
+  flex: 1;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.live-badge {
+  background: #ff4757;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.odds-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.odd {
+  background: rgba(45, 53, 97, 0.5);
+  padding: 8px;
+  border-radius: 4px;
+  text-align: center;
+  color: #b0b3c1;
+  font-size: 14px;
+}
+
+.bet-slip {
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(0, 208, 132, 0.1));
+  border: 2px solid #ffd700;
+  border-radius: 8px;
+  padding: 20px;
+  height: fit-content;
+}
+
+.bet-slip h3 {
+  color: #ffd700;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.selected-bet {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.bet-event {
+  background: rgba(45, 53, 97, 0.5);
+  padding: 10px;
+  border-radius: 4px;
+  color: #ffffff;
+  font-weight: 500;
+  border-left: 3px solid #ffd700;
+}
+
+.odds-selection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.odd-btn {
+  background: rgba(45, 53, 97, 0.5);
+  color: #ffd700;
+  border: 1px solid #ffd700;
+  padding: 10px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.odd-btn:hover {
+  background: rgba(255, 215, 0, 0.15);
+}
+
+.bet-input {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.bet-input label {
+  color: #b0b3c1;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.bet-input input {
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.calculation {
+  background: rgba(0, 208, 132, 0.15);
+  border: 1px solid #00d084;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.calculation p {
+  color: #00d084;
+  font-size: 14px;
+  margin: 0;
+}
+
+.calculation strong {
+  color: #ffd700;
+}
+
+.btn-bet {
+  background: linear-gradient(90deg, #ffd700, #ffed4e);
+  color: #1a1f3a;
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-bet:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.4);
+}
+
+.empty-slip {
+  color: #b0b3c1;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.bets-history {
+  background: rgba(45, 53, 97, 0.5);
+  border: 1px solid #3d4470;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.bets-history h3 {
+  color: #ffd700;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.bets-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.bets-table thead {
+  background: rgba(61, 68, 112, 0.5);
+  border-bottom: 2px solid #ffd700;
+}
+
+.bets-table th {
+  padding: 12px;
+  text-align: left;
+  color: #ffd700;
+  font-weight: 600;
+}
+
+.bets-table td {
+  padding: 12px;
+  border-bottom: 1px solid #3d4470;
+  color: #b0b3c1;
+}
+
+.bets-table tr:hover {
+  background: rgba(61, 68, 112, 0.3);
+}
+
+.status-badge {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.status-badge.pending {
+  background: rgba(255, 165, 2, 0.2);
+  color: #ffa502;
+}
+
+.status-badge.won {
+  background: rgba(0, 208, 132, 0.2);
+  color: #00d084;
+}
+
+.status-badge.lost {
+  background: rgba(255, 71, 87, 0.2);
+  color: #ff4757;
+}
+
+@media (max-width: 768px) {
+  .betting-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .bets-table {
+    font-size: 14px;
+  }
+  
+  .bets-table th,
+  .bets-table td {
+    padding: 8px;
+  }
+}

@@ -1,0 +1,82 @@
+:root {
+  --primary: #1a1f3a;
+  --secondary: #2d3561;
+  --accent: #ffd700;
+  --accent-light: #ffed4e;
+  --success: #00d084;
+  --danger: #ff4757;
+  --warning: #ffa502;
+  --text-primary: #ffffff;
+  --text-secondary: #b0b3c1;
+  --border: #3d4470;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-light);
+}
+
+button {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent-light);
+}
+
+input, textarea, select {
+  background: var(--secondary);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+  padding: 10px;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+}

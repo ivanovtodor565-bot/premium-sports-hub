@@ -1,0 +1,51 @@
+.navigation {
+  background: rgba(45, 53, 97, 0.8);
+  border-bottom: 1px solid #3d4470;
+  padding: 0;
+  sticky: top;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  gap: 10px;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+.nav-btn {
+  background: transparent;
+  color: #b0b3c1;
+  border: none;
+  padding: 15px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+
+.nav-btn:hover {
+  color: #ffd700;
+  background: rgba(255, 215, 0, 0.1);
+}
+
+.nav-btn.active {
+  color: #ffd700;
+  border-bottom-color: #ffd700;
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+    gap: 5px;
+    padding: 0 10px;
+  }
+  
+  .nav-btn {
+    padding: 12px 10px;
+    font-size: 14px;
+  }
+}
