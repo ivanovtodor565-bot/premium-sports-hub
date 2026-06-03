@@ -1,1 +1,5 @@
-{\n  \"version\": 2,\n  \"buildCommand\": \"npm run build\",\n  \"outputDirectory\": \"build\",\n  \"env\": {\n    \"CI\": \"false\"\n  }\n}\n
+{
+  "version": 2,
+  "buildCommand": "npm run build",
+  "outputDirectory": "build"
+}
